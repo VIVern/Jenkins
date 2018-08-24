@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                php index.php
+                echo lol
             }
         }
         stage('Final') {
