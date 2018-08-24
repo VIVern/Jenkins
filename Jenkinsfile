@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat "ping 127.0.0.1"
+                bat "cd D:\test_CI_CD"
+                bat "D:"
+                bat "php\php.exe Jenkins\index.php"
             }
         }
         stage('Final') {
