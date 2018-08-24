@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'lol'
+                bat "ping 127.0.0.1"
             }
         }
         stage('Final') {
