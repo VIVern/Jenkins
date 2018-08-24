@@ -3,7 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'ping 127.0.0.1'
+                php index.php
+            }
+        }
+        stage('build') {
+            steps {
+                echo 'nice'
             }
         }
     }
