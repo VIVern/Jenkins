@@ -6,7 +6,7 @@ pipeline {
                 php index.php
             }
         }
-        stage('build') {
+        stage('Final') {
             steps {
                 echo 'nice'
             }
