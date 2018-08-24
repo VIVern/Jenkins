@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'php' } }
+    agent any
     stages {
         stage('build') {
             steps {
-                sh 'php index.php'
+                bat 'ping 127.0.0.1'
             }
         }
     }
