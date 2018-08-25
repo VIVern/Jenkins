@@ -6,10 +6,10 @@ use App\HelloWorld;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Class TestHelloWorld
+ * Class HelloWorldTest
  * @package test
  */
-class TestHelloWorld extends TestCase
+class HelloWorldTest extends TestCase
 {
     /**
      * Test sayHello method.
