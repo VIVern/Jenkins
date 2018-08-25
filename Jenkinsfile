@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('index') {
             steps {
-                php index.php
+                sh "php index.php"
             }
         }
         stage('Final') {
