@@ -9,12 +9,12 @@ namespace App;
 class HelloWorld
 {
     /**
-     * @param string $name User name.
+     * @param string $n User name.
      *
      * @return string
      */
-    public function sayHello(string $name) : string
+    public function sayHello(string $n) : string
     {
-        return "Hello" . $name . "!";
+        return "Hello" . $n . "!";
     }
 }
