@@ -1,14 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage('Syntax') {
+        stage('Preparation') {
             steps {
-                sh "./vendor/bin/phpcs -h"
+                sh "composer install"
             }
         }
-        stage('Final') {
+        stage('Syntax') {
             steps {
-                echo 'cool'
+                sh './vendor/bin/phpcs -h'
             }
         }
     }
