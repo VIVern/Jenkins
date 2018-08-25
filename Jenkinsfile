@@ -1,16 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('index') {
             steps {
-                bat "cd D:\test_CI_CD"
-                bat "D:"
-                bat "php\php.exe Jenkins\index.php"
+                php index.php
             }
         }
         stage('Final') {
             steps {
-                echo 'nice'
+                echo 'cool'
             }
         }
     }
