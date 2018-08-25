@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('index') {
+        stage('Syntax') {
             steps {
-                sh "php index.php"
+                sh "./vendor/bin/phpcs -h"
             }
         }
         stage('Final') {
