@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Syntax') {
             steps {
-                sh './vendor/bin/phpcs -h'
+                sh './vendor/bin/phpcs ./'
             }
         }
     }
