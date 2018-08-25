@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Syntax') {
             steps {
-                sh './vendor/bin/phpcs --standard=phpcs.xml./'
+                sh './vendor/bin/phpcs --standard=phpcs.xml ./'
             }
         }
     }
