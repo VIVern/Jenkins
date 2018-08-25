@@ -9,13 +9,13 @@ pipeline {
 
         stage('Syntax phpcs') {
             steps {
-                sh './vendor/bin/phpcs --standard=phpcs.xml ./'
+                sh './vendor/bin/phpcs --standard=ci/phpcs/phpcs.xml ./'
             }
         }
 
         stage('Syntax phpmd') {
             steps {
-                sh './vendor/bin/phpmd . text phpmd.xml --suffixes php'
+                sh './vendor/bin/phpmd . text ci/phpmd/phpmd.xml --suffixes php'
             }
         }
 
