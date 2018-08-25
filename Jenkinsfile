@@ -6,9 +6,15 @@ pipeline {
                 sh "composer install"
             }
         }
-        stage('Syntax') {
+        stage('Syntax phpcs') {
             steps {
                 sh './vendor/bin/phpcs --standard=phpcs.xml ./'
+            }
+        }
+
+        stage('Syntax phpmd') {
+            steps {
+                sh './vendor/bin/phpmd . text phpmd.xml --suffixes php'
             }
         }
     }
