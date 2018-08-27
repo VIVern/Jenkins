@@ -21,6 +21,6 @@ class HelloWorldTest extends TestCase
         $helloWorld = new HelloWorld();
 
         $result = $helloWorld->sayHello('Denis');
-        $this->assertEquals('Hello, Denis!', $result);
+        $this->assertEquals('Hello, Denis!!!', $result);
     }
 }
