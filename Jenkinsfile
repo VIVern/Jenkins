@@ -21,7 +21,7 @@ pipeline {
 
         stage('Test unit') {
             steps {
-                sh './vendor/bin/phpunit -v -c phpunit.xml --coverage-text --colors=never --coverage-html ci/phpunit/artifacts/'
+                sh './vendor/bin/phpunit -v -c phpunit.xml --coverage-text --colors=always --coverage-html ci/phpunit/artifacts/'
             }
         }
     }
